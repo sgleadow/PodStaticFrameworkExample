@@ -1,0 +1,13 @@
+use_frameworks!
+platform :ios, '10.0'
+
+target 'StaticExample_Example' do
+  pod 'StaticExample', :path => '../'
+
+  target 'StaticExample_Tests' do
+    inherit! :search_paths
+
+    pod 'Quick', '~> 1.2.0'
+    pod 'Nimble', '~> 7.0.2'
+  end
+end

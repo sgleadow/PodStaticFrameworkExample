@@ -1,0 +1,27 @@
+PODS:
+  - Nimble (7.0.3)
+  - Quick (1.2.0)
+  - StaticExample (0.1.0)
+
+DEPENDENCIES:
+  - Nimble (~> 7.0.2)
+  - Quick (~> 1.2.0)
+  - StaticExample (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  StaticExample:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  StaticExample: 332357704c3e8ab8e4d8014df6b9edbea87c2ca8
+
+PODFILE CHECKSUM: 6e984f8cc316ad103f42fd12bdb7a79268e544d3
+
+COCOAPODS: 1.5.3
