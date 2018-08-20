@@ -38,6 +38,16 @@
                ReferencedContainer = "container:PodStaticFrameworkExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "39011AE499530ACF3DBC71FFFFD74A55"
+               BuildableName = "DynamicExample-Unit-Tests.xctest"
+               BlueprintName = "DynamicExample-Unit-Tests"
+               ReferencedContainer = "container:../Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

@@ -4,7 +4,7 @@ platform :ios, '10.0'
 target 'PodStaticFrameworkExample' do
   use_frameworks!
 
-  pod 'DynamicExample', :path => './DynamicExample'
+  pod 'DynamicExample', :path => './DynamicExample', :testspecs => ['Tests']
   pod 'StaticExample', :path => './StaticExample'
 
   target 'PodStaticFrameworkExampleTests' do

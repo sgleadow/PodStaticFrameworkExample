@@ -1,11 +1,15 @@
 PODS:
   - DynamicExample (0.1.0)
+  - DynamicExample/Tests (0.1.0):
+    - Nimble (~> 7.1)
+    - Quick (~> 1.3)
   - Nimble (7.1.3)
   - Quick (1.3.1)
   - StaticExample (0.1.0)
 
 DEPENDENCIES:
   - DynamicExample (from `./DynamicExample`)
+  - DynamicExample/Tests (from `./DynamicExample`)
   - Nimble
   - Quick
   - StaticExample (from `./StaticExample`)
@@ -22,11 +26,11 @@ EXTERNAL SOURCES:
     :path: "./StaticExample"
 
 SPEC CHECKSUMS:
-  DynamicExample: 82aa0c39b1093fa01c1ade201a3e3d448d3cfbab
+  DynamicExample: 6e68cb922184f001630f506153b07ee99ec4c497
   Nimble: 2839b01d1b31f6a6a7777a221f0d91cf52e8e27b
   Quick: d17304d58d0d169dd0bd1c6e5c28e3318de32a1a
   StaticExample: 60e97f856d3308ecb26ac25e4aa98f7916a2188a
 
-PODFILE CHECKSUM: a748db9d04ec4db9e152ce09b1f7626965e83e47
+PODFILE CHECKSUM: f1af15195eb611efb375d6fb1603d55e8ab5f342
 
 COCOAPODS: 1.5.3

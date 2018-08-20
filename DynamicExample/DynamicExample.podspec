@@ -12,4 +12,10 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
   s.source_files = 'DynamicExample/Classes/**/*'
+
+  s.test_spec 'Tests' do |test_spec|
+    test_spec.source_files = 'Example/Tests/**/*.swift'
+    test_spec.dependency 'Nimble', '~> 7.1'
+    test_spec.dependency 'Quick', '~> 1.3'
+  end
 end
