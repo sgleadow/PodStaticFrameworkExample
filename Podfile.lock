@@ -6,13 +6,17 @@ PODS:
   - Nimble (7.1.3)
   - Quick (1.3.1)
   - StaticExample (0.1.0)
+  - StaticExample/Tests (0.1.0):
+    - Nimble (~> 7.1)
+    - Quick (~> 1.3)
 
 DEPENDENCIES:
   - DynamicExample (from `./DynamicExample`)
   - DynamicExample/Tests (from `./DynamicExample`)
-  - Nimble
-  - Quick
+  - Nimble (~> 7.1)
+  - Quick (~> 1.3)
   - StaticExample (from `./StaticExample`)
+  - StaticExample/Tests (from `./StaticExample`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -29,8 +33,8 @@ SPEC CHECKSUMS:
   DynamicExample: 6e68cb922184f001630f506153b07ee99ec4c497
   Nimble: 2839b01d1b31f6a6a7777a221f0d91cf52e8e27b
   Quick: d17304d58d0d169dd0bd1c6e5c28e3318de32a1a
-  StaticExample: 60e97f856d3308ecb26ac25e4aa98f7916a2188a
+  StaticExample: 850c69a79da7fff7f76aff6a6ec889450c16a19f
 
-PODFILE CHECKSUM: f1af15195eb611efb375d6fb1603d55e8ab5f342
+PODFILE CHECKSUM: e413db478bcef58b89d49d18c84415c03bb5e0b3
 
 COCOAPODS: 1.5.3
