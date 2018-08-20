@@ -5,6 +5,7 @@ target 'PodStaticFrameworkExample' do
   use_frameworks!
 
   pod 'DynamicExample', :path => './DynamicExample'
+  pod 'StaticExample', :path => './StaticExample'
 
   target 'PodStaticFrameworkExampleTests' do
     inherit! :search_paths
