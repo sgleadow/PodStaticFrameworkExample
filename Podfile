@@ -15,3 +15,12 @@ target 'PodStaticFrameworkExample' do
 
 end
 
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if target.name == 'StaticExample-Unit-Tests'
+      target.build_configurations.each do |config|
+        config.build_settings['MACH_O_TYPE'] = 'mh_bundle'
+      end
+    end
+  end
+end
