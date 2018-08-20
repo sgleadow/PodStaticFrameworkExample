@@ -8,6 +8,7 @@ The project contains a consuming sample application, `PodStaticFrameworkExample`
 
 The project uses [Cocoapods test specificications](http://blog.cocoapods.org/CocoaPods-1.3.0/) that came in the v1.3.0 release.
 
+
 ## Hierarchy
 
 ```
@@ -45,6 +46,7 @@ The project uses [Cocoapods test specificications](http://blog.cocoapods.org/Coc
     └── StaticExample.podspec
 ```
 
+
 ## The problem
 
 The test specs are integrated into the main app using the new mechanism:
@@ -54,7 +56,20 @@ The test specs are integrated into the main app using the new mechanism:
   pod 'StaticExample', :path => './StaticExample', :testspecs => ['Tests']
 ```
 
-The dynamic framework tests work fine, but the static framework tests do not. It seems this is because cocoapods is setting up the unit test bundle to be a static library (inheriting the static flag?), eg:
+The dynamic framework tests work fine, but the static framework tests do not. When trying to run, I get this error in the Xcode build output:
+
+```
+Test target StaticExample-Unit-Tests encountered an error (Early unexpected exit, operation never finished bootstrapping - no restart will be attempted)
+```
+
+It seems this is because cocoapods is setting up the unit test bundle to be a static library, Xcode doesn't know how to inject and run it like it usually would a `.xctest` bundle. eg. the dynamic framework unit test bundle defaults to a normal bundle type:
+
+![Correct Target Configuration](screenshots/correct-target-configuration.png)
+
+but the equivalent for the static framework is defaulting to being a static library, even though the target is a unit test bundle (inheriting the static flag?)
+
+![Incorrect Target Configuration](screenshots/incorrect-target-configuration.png)
+
 
 ## Work around 1
 
@@ -74,14 +89,12 @@ end
 
 ## Work around 2
 
-Even with (1), it seems the dependencies for the target are wrong, so a clean build may not work. For example, the dependencies for the dynamic framework's unit test bundle looks like this:
+Even with (1), it seems the dependencies for the target are wrong, so a clean build may not work (like we do in CI). For example, the dependencies for the dynamic framework's unit test bundle looks like this:
 
-```
-* DynamicExample
-* Quick
-* Nimble
-```
+![Correct Target Dependencies](screenshots/correct-target-dependencies.png)
 
 ... but for the equivalent target for the static library, it's empty.
+
+![Missing Target Dependencies](screenshots/missing-target-dependencies.png)
 
 Manually adding the target dependencies _works_, but it's overwritten each time `pod install` is run, so it's not sustainable.
