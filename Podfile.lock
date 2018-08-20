@@ -1,24 +1,27 @@
 PODS:
+  - DynamicExample (0.1.0)
   - Nimble (7.1.3)
   - Quick (1.3.1)
-  - SnapKit (4.0.0)
 
 DEPENDENCIES:
+  - DynamicExample (from `./DynamicExample`)
   - Nimble
   - Quick
-  - SnapKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Nimble
     - Quick
-    - SnapKit
+
+EXTERNAL SOURCES:
+  DynamicExample:
+    :path: "./DynamicExample"
 
 SPEC CHECKSUMS:
+  DynamicExample: 65e98108daaec450d4970ecf7111ef4b601845ba
   Nimble: 2839b01d1b31f6a6a7777a221f0d91cf52e8e27b
   Quick: d17304d58d0d169dd0bd1c6e5c28e3318de32a1a
-  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: a6e1683077a286ccd896e0dce7f37cb59df55183
+PODFILE CHECKSUM: 15a1a8e329e7da8969014da4407a19fcc5bd33bf
 
 COCOAPODS: 1.5.3

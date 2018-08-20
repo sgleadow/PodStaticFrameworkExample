@@ -4,7 +4,7 @@ platform :ios, '10.0'
 target 'PodStaticFrameworkExample' do
   use_frameworks!
 
-  pod 'SnapKit'
+  pod 'DynamicExample', :path => './DynamicExample'
 
   target 'PodStaticFrameworkExampleTests' do
     inherit! :search_paths

@@ -1,18 +1,14 @@
 import UIKit
-import SnapKit
+import DynamicExample
 
 class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    let label = UILabel(frame: CGRect.zero)
-    label.text = "PodStaticFrameworkExample"
-    view.addSubview(label)
-
-    label.snp.makeConstraints { make in
-      make.center.equalToSuperview()
-    }
+    let adder = DynamicAdder()
+    let result = adder.add(1, 2)
+    print("1 + 2 = \(result)")
   }
 
 }
