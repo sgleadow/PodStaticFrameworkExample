@@ -1439,33 +1439,6 @@
 			};
 			name = Debug;
 		};
-		3DC2806B8641E2EE45149CD93AA054AE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7DEB624A53351D4290450CF10348DDD /* StaticExample.unit.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGNING_ALLOWED = YES;
-				CODE_SIGNING_REQUIRED = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/StaticExample/StaticExample-Unit-Tests-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/StaticExample/StaticExample-Unit-Tests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-lswiftSwiftOnoneSupport",
-				);
-				PRODUCT_NAME = "StaticExample-Unit-Tests";
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
 		53B09320773425989727C3903271AFE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D3D7F054872A2D6B07413710DB0581F0 /* Pods-PodStaticFrameworkExampleTests.release.xcconfig */;
@@ -1790,7 +1763,7 @@
 			};
 			name = Release;
 		};
-		8DB65CC556EFB83C3432BDA4EB97C70E /* Release */ = {
+		A8642CB5BC68DA5A652DA905D1123EB3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D7DEB624A53351D4290450CF10348DDD /* StaticExample.unit.xcconfig */;
 			buildSettings = {
@@ -1804,7 +1777,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/StaticExample/StaticExample-Unit-Tests-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/StaticExample/StaticExample-Unit-Tests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_bundle;
 				PRODUCT_NAME = "StaticExample-Unit-Tests";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -2003,6 +1976,33 @@
 			};
 			name = Release;
 		};
+		FC7821AEA7BE71F1FD6985F9AE3E816C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7DEB624A53351D4290450CF10348DDD /* StaticExample.unit.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/StaticExample/StaticExample-Unit-Tests-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StaticExample/StaticExample-Unit-Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lswiftSwiftOnoneSupport",
+				);
+				PRODUCT_NAME = "StaticExample-Unit-Tests";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2054,8 +2054,8 @@
 		8442C07A7E79419486D18BA58693E34C /* Build configuration list for PBXNativeTarget "StaticExample-Unit-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3DC2806B8641E2EE45149CD93AA054AE /* Debug */,
-				8DB65CC556EFB83C3432BDA4EB97C70E /* Release */,
+				FC7821AEA7BE71F1FD6985F9AE3E816C /* Debug */,
+				A8642CB5BC68DA5A652DA905D1123EB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
