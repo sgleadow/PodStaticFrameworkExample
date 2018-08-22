@@ -1,0 +1,6 @@
+framework module StaticExample {
+  umbrella header "StaticExample-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "StaticExample",
+  "version": "0.1.0",
+  "summary": "A short description of StaticExample.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Stewart Gleadow/StaticExample",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Stewart Gleadow": "sgleadow@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Stewart Gleadow/StaticExample.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "StaticExample/Classes/**/*",
+  "static_framework": true,
+  "testspecs": [
+    {
+      "name": "Tests",
+      "test_type": "unit",
+      "source_files": "Example/Tests/**/*.swift",
+      "dependencies": {
+        "Nimble": [
+          "~> 7.1"
+        ],
+        "Quick": [
+          "~> 1.3"
+        ]
+      }
+    }
+  ]
+}
