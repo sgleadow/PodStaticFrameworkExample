@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "39011AE499530ACF3DBC71FFFFD74A55"
+               BlueprintIdentifier = "4EE641D9138B1BEC56A6935CC3F1DCE0"
                BuildableName = "DynamicExample-Unit-Tests.xctest"
                BlueprintName = "DynamicExample-Unit-Tests"
                ReferencedContainer = "container:../Pods/Pods.xcodeproj">
@@ -52,7 +52,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6C75B403204F928F9939D8722548414E"
+               BlueprintIdentifier = "8BE5E2C53003D90B26B87BE731CE0640"
                BuildableName = "StaticExample-Unit-Tests.xctest"
                BlueprintName = "StaticExample-Unit-Tests"
                ReferencedContainer = "container:../Pods/Pods.xcodeproj">
